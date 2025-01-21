@@ -84,22 +84,22 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:active {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:focus {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav {
@@ -149,10 +149,12 @@ img {
     border-radius: 50%;
     width: 256px;
     height: 256px;
+    border: 4px solid #e0e0e0;
 }
 
 .tel-num {
     color: #ff4040;
+    font-size: 16px;
 }
 
 .coach-text {
@@ -223,14 +225,15 @@ img {
 
 /* Caption text */
 .text {
-    color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 24px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
-    font-family: Arial, serif;
+    font-family: Bahnschrift, serif;
 }
 
 /* Number text (1/3 etc) */
