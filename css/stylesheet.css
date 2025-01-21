@@ -1,0 +1,151 @@
+/*color pallet*/
+:root {
+    --primary: #00c000;
+    --secondary: #ffffff;
+}
+
+
+/*styling of tags*/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    font-family: Arial, serif;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-family: Arial, serif;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, serif;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+    color: white;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 16px;
+    text-align: right;
+
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+/*styling of classes*/
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.mitarbeiter {
+    display: flex;
+}
+
+.mitarbeiter img {
+    border-radius: 50%;
+}
+
+.background-color {
+    background-color: gray;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.width-100 {
+    width: 100%;
+}
