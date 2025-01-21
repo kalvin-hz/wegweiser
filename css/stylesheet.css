@@ -9,9 +9,10 @@
 
 /*font-family*/
 * {
- font-size: 100%;
- font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+    font-family: Georgia, serif;
 }
+
 html {
     margin: 0;
     padding: 0;
@@ -68,7 +69,7 @@ h6 {
 p {
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: gray;
 }
 
@@ -76,7 +77,6 @@ a {
     padding: 0;
     margin: 0;
     color: black;
-
     text-decoration: none;
 }
 
@@ -103,14 +103,14 @@ a:visited {
 nav {
     background: rgb(128, 183, 187);
     background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
-    padding: 16px;
+    padding: 0 16px 16px 16px;
     text-align: right;
 
 }
 
 nav a {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    /*font-weight: bold;*/
     margin: 16px;
 }
 
@@ -151,7 +151,24 @@ img {
 }
 
 .tel-num {
-    font-size: 16px;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    /*font-size: 32px;*/
+}
+
+.tel-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.tel-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 .coach-text {
