@@ -186,6 +186,14 @@ img {
     flex-direction: column;
 }
 
+.logo {
+    max-width: 512px;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
 .text-align-left {
     text-align: left;
 }
@@ -240,8 +248,8 @@ img {
 /* Caption text */
 .text {
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 40px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -338,6 +346,28 @@ img {
 .col-12 {
     width: 100%;
 }
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 5px solid lightgray;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
