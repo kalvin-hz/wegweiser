@@ -92,6 +92,7 @@ nav {
 
 nav a {
     font-size: 18px; /* Consistent font size */
+    font-weight: bold;
     color: white; /* Ensure contrast on gradient */
     text-decoration: none;
     padding: 8px 16px;
