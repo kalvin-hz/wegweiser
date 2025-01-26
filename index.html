@@ -1,158 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Wegweiser</title>
 </head>
 <body>
-<main>
+
+<header>
     <nav>
         <div class="tel-container">
             <a href="tel:+4915778799976" class="tel-num"><img src="img/drake.png" alt="tel." class="tel-icon"></a>
             <a href="tel:+4915778799976" class="tel-num">+49 157 7879 9976</a>
         </div>
-        <div>
-            <!--            <img src="img/wegweiser_short.png" alt="Logo" class="logo align-self-start">-->
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="html/angebote.html">Angebote</a>
             <a href="html/kontakt.html">Kontakt</a>
             <a href="html/faq.html">FAQ</a>
         </div>
     </nav>
+</header>
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+<main>
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/slide_1.jpeg" alt="Slide 1" style="width:100%">
+                <div class="text">Gemeinsam bauen wir das Fundament für deine Zukunft -<br> stark, sicher, einzigartig!
+                </div>
+            </div>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/slide_1.jpeg" style="width:100%">
-            <div class="text">Gemeinsam bauen wir das Fundament für deine Zukunft -<br> stark, sicher, einzigartig!
+            <div class="mySlides fade">
+                <img src="img/slide_2.jpeg" alt="Slide 2" style="width:100%">
+                <div class="text">Mit dir gestalten wir eine Zukunft, die Bestand hat -<br>stabil, glücklich, erfüllt.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slide_3.jpeg" alt="Slide 3" style="width:100%">
+                <div class="text">Gemeinsam gestalten wir deine Zukunft -<br>beständig und voller Perspektiven</div>
             </div>
         </div>
+    </section>
 
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/slide_2.jpeg" style="width:100%">
-            <div class="text">Mit dir gestalten wir eine Zukunft, die Bestand hat -<br>stabil, glücklich, erfüllt.</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/slide_3.jpeg" style="width:100%">
-            <div class="text">Gemeinsam gestalten wir deine Zukunft -<br>beständig und voller Perspektiven</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <hr class="solid">
-
-    <br>
-    <br>
-
-    <div class="center width-100">
-        <br>
-        <br>
-
+    <section class="team">
         <div class="center">
             <div class="mitarbeiter-card">
-                <img src="img/wasim.jpeg" alt="coach_1">
+                <img src="img/wasim.jpeg" alt="Herr Sarwari">
                 <div class="flex flex-col center coach-text">
                     <h2>Herr Sarwari</h2>
-                    <br>
                     <p>- Wirtschaftspsychologie (M.Sc.)</p>
                     <p>- Dozent fuer systemische beratung</p>
-                    <br>
                     <p>Meine Vision lautet Menschen die Hand zu reichen, die ihr eigenes Potenzial nicht kennen oder
                         vergessen haben.</p>
                 </div>
             </div>
 
-            <br>
-            <br>
-
             <div class="mitarbeiter-card">
                 <div class="flex flex-col coach-text">
                     <h2>Frau Khalil</h2>
-                    <br>
                     <p>- Sozialarbeiterin</p>
                     <p>- systemisch-integrative Beraterin</p>
-                    <br>
                     <p>Frau Khalil bereichert unser Team mit ihrer Expertise als Sozialarbeiterin und
                         systemisch-integrative Beraterin. Ihre Schwerpunkte liegen in der Elternberatung,
                         Sprachentwicklung und Paarberatung. Mit ihrer einfühlsamen und professionellen Herangehensweise
                         unterstützt sie Menschen dabei, neue Perspektiven zu entwickeln und nachhaltige Lösungen zu
                         finden.</p>
                 </div>
-                <img src="img/gingi.jpg" alt="coach_1">
+                <img src="img/gingi.jpg" alt="Frau Khalil">
             </div>
         </div>
-        <br>
-        <div>
-            <div class="center">
+    </section>
 
-                <br>
-                <br>
+    <section class="about">
+        <div class="center">
+            <img src="img/wegweiser_short.png" alt="Wegweiser Logo" class="logo">
+            <hr class="solid">
+            <h2>Ihr Kompass für psychisches Wohlbefinden</h2>
+            <p>
+                Der Alltag stellt uns vor vielfältige Herausforderungen. Stress, Konflikte, Ängste und
+                Unsicherheiten können uns aus der Bahn werfen und unsere Lebensqualität beeinträchtigen. In diesen
+                Momenten ist es wichtig, Unterstützung zu suchen und neue Wege zu finden, um mit den Schwierigkeiten
+                umzugehen.
 
-                <img src="img/wegweiser_short.png" alt="logo" class="logo">
+                Wegweiser ist eine psychologische Agentur, die Ihnen dabei hilft, Ihren individuellen Weg zu mehr
+                psychischer Gesundheit und innerem Gleichgewicht zu finden. Unser erfahrenes und einfühlsames Team
+                aus Psychologen und Therapeuten bietet Ihnen professionelle Beratung und Begleitung in verschiedenen
+                Lebenslagen.
 
-                <br>
-                <br>
+                Wir unterstützen Sie unter anderem bei:
+            <ul>
+                <li>Stressbewältigung und Burnout-Prävention</li>
+                <li>Bewältigung von Ängsten und Depressionen</li>
+                <li>Verarbeitung von traumatischen Erlebnissen</li>
+                <li>Lösung von Konflikten in Beziehungen und Familie</li>
+                <li>Steigerung des Selbstwertgefühls und der Selbstwirksamkeit</li>
+                <li>Persönlichkeitsentwicklung und Entfaltung Ihres Potenzials</li>
+            </ul>
 
-                <hr class="solid">
+            Bei Wegweiser stehen Sie im Mittelpunkt. Wir nehmen uns Zeit für Ihre Anliegen und entwickeln
+            gemeinsam mit Ihnen individuelle Lösungsansätze, die zu Ihnen passen.
 
-                <br>
-                <br>
+            Nehmen Sie den ersten Schritt und kontaktieren Sie uns für ein unverbindliches Erstgespräch.
 
-                <h2>Ihr Kompass für psychisches Wohlbefinden</h2>
-                <p>
-                    Der Alltag stellt uns vor vielfältige Herausforderungen. Stress, Konflikte, Ängste und
-                    Unsicherheiten können uns aus der Bahn werfen und unsere Lebensqualität beeinträchtigen. In diesen
-                    Momenten ist es wichtig, Unterstützung zu suchen und neue Wege zu finden, um mit den Schwierigkeiten
-                    umzugehen.
-
-                    Wegweiser ist eine psychologische Agentur, die Ihnen dabei hilft, Ihren individuellen Weg zu mehr
-                    psychischer Gesundheit und innerem Gleichgewicht zu finden. Unser erfahrenes und einfühlsames Team
-                    aus Psychologen und Therapeuten bietet Ihnen professionelle Beratung und Begleitung in verschiedenen
-                    Lebenslagen.
-
-                    Wir unterstützen Sie unter anderem bei:
-
-                    Stressbewältigung und Burnout-Prävention
-                    Bewältigung von Ängsten und Depressionen
-                    Verarbeitung von traumatischen Erlebnissen
-                    Lösung von Konflikten in Beziehungen und Familie
-                    Steigerung des Selbstwertgefühls und der Selbstwirksamkeit
-                    Persönlichkeitsentwicklung und Entfaltung Ihres Potenzials
-                    Bei Wegweiser stehen Sie im Mittelpunkt. Wir nehmen uns Zeit für Ihre Anliegen und entwickeln
-                    gemeinsam mit Ihnen individuelle Lösungsansätze, die zu Ihnen passen.
-
-                    Nehmen Sie den ersten Schritt und kontaktieren Sie uns für ein unverbindliches Erstgespräch.
-
-                    Wegweiser - Gemeinsam neue Wege finden.</p>
-            </div>
-
+            Wegweiser - Gemeinsam neue Wege finden.
+            </p>
         </div>
-    </div>
+    </section>
 </main>
+
+<footer>
+</footer>
+
 <script src="js/slideshow.js"></script>
 </body>
 </html>

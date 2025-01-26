@@ -1,350 +1,327 @@
-/*color pallet*/
+/* Color Palette */
 :root {
-  --primary: #5CA7AC;
-  --secondary: #ffffff;
+    --primary: #5CA7AC;
+    --secondary: #ffffff;
+    --accent1: #E68387;
+    --accent2: #F2D7A1;
+    --primary-light: #80B7BB;
+    --gray-dark: #555;
 }
 
-/*styling of tags*/
-
-/*font-family*/
+/* General Styles */
 * {
-  font-size: 100%;
-  font-family: Georgia, serif;
-  box-sizing: border-box; /* Apply box-sizing to all elements */
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
-html, body, head, div {
-  margin: 0;
-  padding: 0;
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--gray-dark);
+    margin: 0;
+    padding: 0;
 }
 
+/* Typography */
 h1 {
-  font-size: 48px;
-  margin: 0;
-  padding: 16px; /* Added padding */
+    font-family: Georgia, serif;
+    font-size: 60px;
+    margin: 0 0 20px 0;
+    padding: 16px;
 }
 
 h2 {
-  font-size: 36px;
-  margin: 0;
-  padding: 12px; /* Added padding */
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 0 0 16px 0;
+    padding: 12px;
 }
 
 h3 {
-  font-size: 24px;
-  margin: 0;
-  padding: 8px; /* Added padding */
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    padding: 8px;
 }
 
 h4, h5, h6 {
-  margin: 0;
-  padding: 4px; /* Added padding */
+    margin: 0 0 4px 0;
+    padding: 4px;
 }
 
 p {
-  font-size: 20px;
-  color: gray;
-  margin: 0;
-  padding: 4px; /* Added padding */
+    font-size: 18px;
+    color: var(--gray-dark);
+    margin: 0 0 10px 0;
+    padding: 4px;
 }
 
 a {
-  color: black;
-  text-decoration: none;
-  margin: 0;
-  padding: 4px; /* Added padding */
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-a:hover, a:active, a:focus, a:visited {
-  text-decoration: none;
-  color: black;
+a:hover {
+    color: var(--gray-dark);
 }
 
+/* Navigation */
 nav {
-  background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
-  padding: 16px;
-  text-align: right;
+    background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
+    padding: 16px;
+    text-align: center;
 }
 
 nav a {
-  font-size: 20px;
-  margin: 16px;
+    font-size: 20px;
+    margin: 0 16px;
+    color: black;
 }
 
+/* Images */
 img {
-  margin: 0;
-  /*padding: 4px; !* Added padding *!*/
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/*styling of classes*/
-
+/* Utility Classes */
 .center {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 16px; /* Added padding */
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 16px;
 }
 
 .mitarbeiter-card {
-  display: flex;
-  background: #fff;
-  border: none;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
-  overflow: hidden;
-  transition: transform 0.2s ease;
-  margin: 4px; /* Added margin */
+    display: flex;
+    background: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    margin: 10px;
 }
 
 .mitarbeiter-card:hover {
-  transform: scale(1.02);
+    transform: translateY(-5px);
 }
 
 .mitarbeiter-card img {
-  border-radius: 50%;
-  width: 256px;
-  height: 256px;
-  border: 4px solid #5CA7AC;
-  margin-right: 16px; /* Added margin */
+    border-radius: 50%;
+    width: 256px;
+    height: 256px;
+    border: 4px solid var(--primary);
+    margin-right: 16px;
 }
 
 .tel-num {
-  font-family: monospace, sans-serif;
-  font-weight: bold;
-  margin: 8px 8px 8px 0;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
 }
 
 .tel-icon {
-  width: 32px;
-  height: 32px;
-  margin-left: 8px; /* Added margin */
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; /* Adjusted margin for better spacing */
 }
 
 .tel-container {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-align-center {
-  text-align: center;
+    text-align: center;
 }
 
 .coach-text {
-  padding: 12px;
-  text-align: left;
-  align-self: center;
+    padding: 12px;
+    text-align: left;
+    align-self: center;
 }
 
 .background-color {
-  background-color: gray;
+    background-color: lightgray;
 }
 
 .flex-col {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .logo {
-  max-width: 512px;
-  padding: 16px; /* Added padding */
+    max-width: 512px;
+    padding: 16px;
 }
 
-.align-self-start {
-  align-self: start;
-}
-
-.text-align-left {
-  text-align: left;
-}
 
 .width-100 {
-  width: 100%;
+    width: 100%;
 }
 
-/* Slideshow container */
+/* Buttons */
+.btn {
+    background-color: var(--accent2);
+    color: var(--gray-dark);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--accent1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Slideshow */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
+.prev,
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-/* Caption text */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .text {
-  color: white;
-  text-shadow: 2px 2px 4px black;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 40px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 4px; /* Adjusted margin */
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
 }
 
-/* Dashed border */
-hr.dashed {
-  border-top: 3px dashed #bbb;
-  margin: 16px 0; /* Added margin */
-}
-
-/* Dotted border */
-hr.dotted {
-  border-top: 3px dotted #bbb;
-  margin: 16px 0; /* Added margin */
-}
-
-/* Solid border */
-hr.solid {
-  border-top: 5px solid lightgray;
-  margin: 16px 0; /* Added margin */
-}
-
-/* Rounded border */
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-  margin: 16px 0; /* Added margin */
+/* Horizontal Rules */
+hr { /* Simplified hr styles */
+    border: none; /* Remove default border */
+    border-top: 5px solid lightgray;
+    margin: 16px 0;
 }
 
 /* Media Queries for Responsiveness */
-
 @media (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-    padding: 12px;
-  }
+    h1 {
+        font-size: 32px;
+        padding: 12px;
+    }
 
-  h2 {
-    font-size: 24px;
-    padding: 8px;
-  }
+    h2 {
+        font-size: 24px;
+        padding: 8px;
+    }
 
-  h3 {
-    font-size: 18px;
-    padding: 4px;
-  }
+    h3 {
+        font-size: 18px;
+        padding: 4px;
+    }
 
-  p {
-    font-size: 16px;
-    padding: 4px;
-  }
+    p {
+        font-size: 16px;
+        padding: 4px;
+    }
 
-  nav a {
-    font-size: 16px;
-    margin: 8px;
-  }
+    nav a {
+        font-size: 16px;
+        margin: 8px;
+    }
 
-  .mitarbeiter-card {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-  }
+    .mitarbeiter-card {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .mitarbeiter-card img {
-    width: 200px;
-    height: 200px;
-    margin-right: 0; /* Remove margin */
-    margin-bottom: 16px; /* Add margin below image */
-  }
+    .mitarbeiter-card img {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 
-  .tel-container {
-    justify-content: center; /* Center telephone icon and number */
-  }
+    .logo {
+        max-width: 90%;
+    }
 
-  .coach-text {
-    text-align: center; /* Center the coach text */
-  }
-
-  .logo {
-    max-width: 90%; /* Make logo responsive */
-  }
-
-  .text {
-    font-size: 24px;
-  }
+    .text {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 480px) {
-  .mitarbeiter-card img {
-    width: 150px;
-    height: 150px;
-  }
+    .mitarbeiter-card img {
+        width: 150px;
+        height: 150px;
+    }
 
-  .text {
-    font-size: 18px;
-  }
+    .text {
+        font-size: 18px;
+    }
 }
