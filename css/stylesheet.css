@@ -1,383 +1,350 @@
 /*color pallet*/
 :root {
-    --primary: #5CA7AC;
-    --secondary: #ffffff;
+  --primary: #5CA7AC;
+  --secondary: #ffffff;
 }
-
 
 /*styling of tags*/
 
 /*font-family*/
 * {
-    font-size: 100%;
-    font-family: Georgia, serif;
+  font-size: 100%;
+  font-family: Georgia, serif;
+  box-sizing: border-box; /* Apply box-sizing to all elements */
 }
 
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-head {
-    margin: 0;
-    padding: 0;
-}
-
-div {
-    margin: 0;
-    padding: 0;
+html, body, head, div {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 48px;
+  font-size: 48px;
+  margin: 0;
+  padding: 16px; /* Added padding */
 }
 
 h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 36px;
+  font-size: 36px;
+  margin: 0;
+  padding: 12px; /* Added padding */
 }
 
 h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
+  font-size: 24px;
+  margin: 0;
+  padding: 8px; /* Added padding */
 }
 
-h4 {
-    padding: 0;
-    margin: 0;
-}
-
-h5 {
-    padding: 0;
-    margin: 0;
-}
-
-h6 {
-    padding: 0;
-    margin: 0;
+h4, h5, h6 {
+  margin: 0;
+  padding: 4px; /* Added padding */
 }
 
 p {
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    color: gray;
+  font-size: 20px;
+  color: gray;
+  margin: 0;
+  padding: 4px; /* Added padding */
 }
 
 a {
-    padding: 0;
-    margin: 0;
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 4px; /* Added padding */
 }
 
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-a:active {
-    text-decoration: none;
-    color: black;
-}
-
-a:focus {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
+a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
-    background: rgb(128, 183, 187);
-    background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
-    padding: 0 16px 16px 16px;
-    text-align: right;
-
+  background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
+  padding: 16px;
+  text-align: right;
 }
 
 nav a {
-    font-size: 20px;
-    /*font-weight: bold;*/
-    margin: 16px;
+  font-size: 20px;
+  margin: 16px;
 }
 
 img {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  /*padding: 4px; !* Added padding *!*/
 }
 
 /*styling of classes*/
 
 .center {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 16px; /* Added padding */
 }
 
 .mitarbeiter-card {
-    display: flex;
-    background: #fff; /* Changed to white for a cleaner look */
-    border: none;
-    padding: 20px;
-    border-radius: 10px; /* Softened the border radius */
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); /* Added a subtle shadow */
-    overflow: hidden; /* Ensures content doesn't spill out of the rounded corners */
-    transition: transform 0.2s ease; /* Adds a smooth hover effect */
+  display: flex;
+  background: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  margin: 4px; /* Added margin */
 }
 
 .mitarbeiter-card:hover {
-    transform: scale(1.02); /* Slightly lifts the card on hover */
+  transform: scale(1.02);
 }
 
 .mitarbeiter-card img {
-    border-radius: 50%;
-    width: 256px;
-    height: 256px;
-    border: 4px solid #5CA7AC;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  border: 4px solid #5CA7AC;
+  margin-right: 16px; /* Added margin */
 }
 
 .tel-num {
-    font-family: monospace, sans-serif;
-    font-weight: bold;
-    margin: 8px 8px 8px 0;
-    /*font-size: 32px;*/
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+  margin: 8px 8px 8px 0;
 }
 
 .tel-icon {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px; /* Added margin */
 }
 
 .tel-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .coach-text {
-    padding-left: 12px;
-    padding-right: 12px;
-    text-align: left;
-    align-self: center;
+  padding: 12px;
+  text-align: left;
+  align-self: center;
 }
 
 .background-color {
-    background-color: gray;
+  background-color: gray;
 }
 
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .logo {
-    max-width: 512px;
+  max-width: 512px;
+  padding: 16px; /* Added padding */
 }
 
 .align-self-start {
-    align-self: start;
+  align-self: start;
 }
 
 .text-align-left {
-    text-align: left;
+  text-align: left;
 }
 
 .width-100 {
-    width: 100%;
-}
-
-* {
-    box-sizing: border-box
+  width: 100%;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-    color: white;
-    text-shadow: 2px 2px 4px black;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 40px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px; /* Adjusted margin */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
+  from {
+    opacity: .4
+  }
 
-
-/* For desktop: */
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
+  to {
+    opacity: 1
+  }
 }
 
 /* Dashed border */
 hr.dashed {
   border-top: 3px dashed #bbb;
+  margin: 16px 0; /* Added margin */
 }
 
 /* Dotted border */
 hr.dotted {
   border-top: 3px dotted #bbb;
+  margin: 16px 0; /* Added margin */
 }
 
 /* Solid border */
 hr.solid {
   border-top: 5px solid lightgray;
+  margin: 16px 0; /* Added margin */
 }
 
 /* Rounded border */
 hr.rounded {
   border-top: 8px solid #bbb;
   border-radius: 5px;
+  margin: 16px 0; /* Added margin */
 }
 
+/* Media Queries for Responsiveness */
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    padding: 12px;
+  }
 
-    .center {
-        width: 100%;
-    }
+  h2 {
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  h3 {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .mitarbeiter-card {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .mitarbeiter-card img {
+    width: 200px;
+    height: 200px;
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 16px; /* Add margin below image */
+  }
+
+  .tel-container {
+    justify-content: center; /* Center telephone icon and number */
+  }
+
+  .coach-text {
+    text-align: center; /* Center the coach text */
+  }
+
+  .logo {
+    max-width: 90%; /* Make logo responsive */
+  }
+
+  .text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mitarbeiter-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
 }
