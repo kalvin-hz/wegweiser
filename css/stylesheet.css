@@ -153,6 +153,7 @@ img {
 .tel-num {
     font-family: monospace, sans-serif;
     font-weight: bold;
+    margin: 8px 8px 8px 0;
     /*font-size: 32px;*/
 }
 
@@ -172,8 +173,8 @@ img {
 }
 
 .coach-text {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     text-align: left;
     align-self: center;
 }
