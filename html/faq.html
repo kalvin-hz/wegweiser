@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Wegweiser - FAQ</title>
 </head>
-<body>
-<main>
+
+<header>
     <nav>
         <div class="tel-container">
             <label for="tel-num"></label>
@@ -22,37 +26,37 @@
             <a href="faq.html">FAQ</a>
         </div>
     </nav>
+</header>
+<body>
 
-    <div class="center">
-        <h1>FAQ</h1>
+<div class="card">
+    <h1>Frequently Asked Questions</h1>
 
-        <div class="text-align-left">
-            <div>
-                <h3>Q: What are your hours of operation?</h3>
-                <h3>A: We are open 24/7, 365 days a year!</h3>
-            </div>
-            <br>
-            <div>
-                <h3>Q: What payment methods do you accept?</h3>
-                <h3>A: We accept all major credit cards, PayPal, and Venmo.</h3>
-            </div>
-            <br>
-            <div>
-                <h3>Q: Where is your company located?</h3>
-                <h3>A: We are a fully remote company with team members all over the world.</h3>
-            </div>
-            <br>
-            <div>
-                <h3>Q: Do you offer gift cards?</h3>
-                <h3>A: Yes, you can purchase gift cards in our online store.</h3>
-            </div>
-            <br>
-            <div>
-                <h3>Q: What is your return policy?</h3>
-                <h3>A: We offer a 30-day money-back guarantee on all products.</h3>
-            </div>
+    <div class="faq-item">
+        <button class="faq-question">
+            What is your return policy?
+            <span class="faq-icon">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+            <p>We offer a 30-day return policy on all items purchased at our store. Please see our <a href="#">returns
+                page</a> for more details.</p>
         </div>
     </div>
-</main>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            How do I track my order?
+            <span class="faq-icon">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Once your order has shipped, you will receive an email with a tracking number. You can use this number to
+                track your order on our website or the carrier's website.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/faqQuestions.js"></script>
+
 </body>
 </html>
