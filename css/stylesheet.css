@@ -20,10 +20,12 @@ body {
     color: var(--gray-dark);
     margin: 0;
     padding: 0;
+    font-size: 1rem; /* Use rem for consistent scaling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, p, a, .tel-num { /* Apply Open Sans to all text elements */
+h1, h2, h3, h4, h5, h6, p, a, .tel-num {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -67,18 +69,45 @@ a:hover {
     color: var(--gray-dark);
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
     background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
-    padding: 16px;
-    text-align: center;
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-around; /* Ensure alignment of content on both ends */
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Even spacing between links */
 }
 
 nav a {
-    font-size: 20px;
-    margin: 0 16px;
-    color: black;
+    font-size: 18px; /* Consistent font size */
+    color: white; /* Ensure contrast on gradient */
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
 }
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+/* Mobile Navigation Tweaks */
+@media (max-width: 768px) {
+
+}
+
 
 /* Images */
 img {
@@ -105,6 +134,7 @@ img {
     overflow: hidden;
     transition: transform 0.2s ease;
     margin: 10px;
+    max-width: 100%;
 }
 
 .angebot {
@@ -139,6 +169,7 @@ img {
     overflow: hidden;
     transition: transform 0.2s ease;
     margin: 10px;
+    flex-wrap: wrap; /* Wrap for small screens */
 }
 
 .mitarbeiter-card:hover {
@@ -151,6 +182,7 @@ img {
     height: 256px;
     border: 4px solid var(--primary);
     margin-right: 16px;
+    margin-bottom: 16px; /* Space for wrapping */
 }
 
 .tel-num {
@@ -214,11 +246,12 @@ img {
     color: var(--gray-dark);
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Better touch target */
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
     display: inline-block;
+    font-size: 16px;
 }
 
 .btn:hover {
@@ -314,6 +347,10 @@ hr {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
     h1 {
         font-size: 32px;
         padding: 12px;
@@ -334,9 +371,29 @@ hr {
         padding: 4px;
     }
 
-    nav a {
-        font-size: 16px;
+    .nav {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: 16px; /* More spacing between items */
+    }
+
+    nav {
+        text-align: center;
+    }
+
+
+    .card, .angebot, .mitarbeiter-card {
         margin: 8px;
+        padding: 16px;
+    }
+
+    .angebot img {
+        width: 100px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
     .mitarbeiter-card img {
@@ -355,45 +412,11 @@ hr {
     }
 }
 
-.faq-item {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-.faq-question {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-question:hover {
-    background-color: #e9e9e9;
-}
-
-.faq-answer {
-    padding: 15px;
-    display: none; /* Hidden by default */
-}
-
-.faq-answer p {
-    margin: 0;
-}
-
-.faq-icon {
-    transition: transform 0.3s ease;
-}
-
-.faq-question.active .faq-icon {
-    transform: rotate(180deg);
-}
-
 @media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+
     .mitarbeiter-card img {
         width: 150px;
         height: 150px;
@@ -401,5 +424,11 @@ hr {
 
     .text {
         font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
