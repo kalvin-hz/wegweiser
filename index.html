@@ -14,19 +14,34 @@
 <body>
 <header>
     <nav>
-        <div class="container">
-            <div class="nav">
-                <div class="tel-container">
-                    <a href="tel:+4915778799976" class="tel-num">
-                        <img src="img/drake.png" alt="tel." class="tel-icon">
-                    </a>
-                    <a href="tel:+4915778799976" class="tel-num">+49 157 7879 9976</a>
-                </div>
-                <a href="index.html">Home</a>
-                <a href="html/angebote.html">Angebote</a>
-                <a href="html/kontakt.html">Kontakt</a>
-                <a href="html/faq.html">FAQ</a>
+        <div class="nav">
+            <a class="tel-container" href="tel:+4915778799976">
+                <img src="img/drake.png" alt="tel." class="tel-icon">
+                <p class="tel-num">+49 157 7879 9976</p>
+            </a>
+            <a href="index.html">Home</a>
+            <a href="html/angebote.html">Angebote</a>
+            <a href="html/kontakt.html">Kontakt</a>
+            <a href="html/faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <!--    mobile navigation   -->
+    <nav>
+        <div class="nav-mobile">
+            <a class="tel-container-mobile" href="tel:+4915778799976">
+                <img src="img/drake.png" alt="tel." class="tel-icon">
+                <p class="tel-num">+49 157 7879 9976</p>
+            </a>
+            <div>
+                <button class="nav-menu" id="nav-menu"><img src="img/menu-icon.png" alt="menu"></button>
             </div>
+        </div>
+        <div class="nav-links" id="nav-links" style="display: none;">
+            <a href="index.html">Home</a>
+            <a href="html/angebote.html">Angebote</a>
+            <a href="html/kontakt.html">Kontakt</a>
+            <a href="html/faq.html">FAQ</a>
         </div>
     </nav>
 </header>
@@ -119,11 +134,12 @@
 </main>
 
 <footer>
-    <div class="container">
+    <div class="">
         <p>&copy; 2023 Wegweiser</p>
     </div>
 </footer>
 
 <script src="js/slideshow.js"></script>
+<script src="js/mobile-nav.js"></script>
 </body>
 </html>
