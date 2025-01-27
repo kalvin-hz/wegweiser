@@ -2,7 +2,8 @@
 :root {
     --primary: #5CA7AC;
     --secondary: #ffffff;
-    --accent1: #E68387;
+    /*--accent1: #E68387;*/
+    --accent1: #5CA7AC;
     --accent2: #F2D7A1;
     --primary-light: #80B7BB;
     --gray-dark: #555;
@@ -35,6 +36,7 @@ h1 {
     font-size: 60px;
     margin: 0 0 20px 0;
     padding: 16px;
+
 }
 
 h2 {
@@ -62,9 +64,10 @@ p {
 }
 
 a {
-    color: black;
+    color: var(--secondary);
     text-decoration: none;
     transition: color 0.2s ease;
+    text-wrap: nowrap;
 }
 
 a:hover {
@@ -90,6 +93,7 @@ nav a {
     color: white; /* Ensure contrast on gradient */
     text-decoration: none;
     padding: 8px 16px;
+    margin: 8px;
     transition: background-color 0.3s;
     border-radius: 5px;
 }
@@ -145,9 +149,25 @@ li {
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
-    margin: 10px;
+    margin: 12px auto;
     width: auto;
 }
+
+.container-2-cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: pretty;
+    gap: 16px;
+}
+
+.container-2-cards .card {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .angebot {
     background: #fff;
@@ -175,11 +195,11 @@ li {
     display: flex;
     background: #fff;
     border: none;
-    padding: 20px;
+    padding: 32px;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease;
-    margin: 10px;
+    margin: 32px;
     flex-wrap: nowrap;
 }
 
@@ -255,6 +275,7 @@ li {
     display: flex;
     align-items: center;
     margin-right: auto;
+    gap: 4px;
 }
 
 .text-align-center {
@@ -297,8 +318,8 @@ li {
 
 /* Buttons */
 .btn {
-    background-color: var(--accent2);
-    color: var(--gray-dark);
+    background-color: var(--primary);
+    color: var(--secondary);
     padding: 12px 20px;
     border: none;
     border-radius: 8px; /* Better touch target */
@@ -363,6 +384,12 @@ li {
     text-align: center;
 }
 
+.team {
+    background-color: #7bb0b4;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -425,6 +452,23 @@ hr {
     z-index: 1;
 }
 
+.mitarbeiter-kontakt-button {
+    align-self: end;
+    text-wrap: nowrap;
+}
+
+.mitarbeiter-kontakt-button a {
+    text-wrap: nowrap;
+}
+
+.footer {
+    z-index: 2;
+}
+
+.color-white {
+    color: white;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
 
@@ -443,6 +487,7 @@ hr {
     .tel-container-mobile {
         display: flex;
         align-items: center;
+        gap: 4px;
     }
 
     /*    mobile typography*/
@@ -474,17 +519,9 @@ hr {
     }
 
     .mitarbeiter-card {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background: #fff;
-        border: none;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s ease;
         margin: 1rem;
-
     }
 
     .mitarbeiter-card:hover {
