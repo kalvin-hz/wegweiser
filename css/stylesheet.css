@@ -12,6 +12,8 @@
 * {
     font-size: 100%;
     box-sizing: border-box;
+    text-wrap: pretty;
+    word-break: break-word;
 }
 
 body {
@@ -77,10 +79,9 @@ nav {
 
 .nav {
     display: flex;
-    justify-content: end;
     align-items: center;
     gap: 24px;
-    padding: 0 4px 0 4px;
+    padding: 4px 4px 4px 4px;
 }
 
 nav a {
@@ -125,12 +126,16 @@ li {
     padding: 16px;
 }
 
-.align-self-center {
-    align-items: center;
+.wrap {
+    flex-wrap: wrap;
 }
 
-.justify-self-center {
-    justify-self: center;
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-self-center {
+    align-items: center;
 }
 
 .card {
@@ -139,10 +144,9 @@ li {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     transition: transform 0.2s ease;
     margin: 10px;
-    max-width: 100%;
+    width: auto;
 }
 
 .angebot {
@@ -405,6 +409,7 @@ hr {
     height: 32px;
     background: none;
     border: none;
+    margin: 8px;
 }
 
 .nav-links {
@@ -432,10 +437,12 @@ hr {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 4px;
     }
 
     .tel-container-mobile {
         display: flex;
+        align-items: center;
     }
 
     /*    mobile typography*/
