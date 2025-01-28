@@ -1,8 +1,13 @@
 /* Color Palette */
 :root {
+    /*mint green*/
     --primary: #5CA7AC;
+    /*white*/
     --secondary: #ffffff;
+
+    /*light red that fits to mint green primary*/
     /*--accent1: #E68387;*/
+
     --accent1: #5CA7AC;
     --accent2: #F2D7A1;
     --primary-light: #80B7BB;
@@ -36,7 +41,7 @@ h1 {
     font-size: 60px;
     margin: 0 0 20px 0;
     padding: 16px;
-
+    color: var(--primary);
 }
 
 h2 {
@@ -90,7 +95,6 @@ nav {
 nav a {
     font-size: 18px; /* Consistent font size */
     font-weight: bold;
-    color: white; /* Ensure contrast on gradient */
     text-decoration: none;
     padding: 8px 16px;
     margin: 8px;
@@ -102,9 +106,9 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
 }
 
-/* Mobile Navigation Tweaks */
-@media (max-width: 768px) {
 
+.color-white {
+    color: white;
 }
 
 
@@ -262,7 +266,7 @@ li {
 
 .tel-num {
     font-weight: bold;
-    color: white;
+    color: var(--secondary);
     margin: auto;
 }
 
@@ -331,7 +335,7 @@ li {
 }
 
 .btn:hover {
-    background-color: var(--accent1);
+    background-color: var(--primary-light);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
 }
@@ -448,7 +452,7 @@ hr {
     right: 0;
     width: auto;
     background-color: var(--primary);
-    color: white;
+    color: var(--secondary);
     z-index: 1;
 }
 
@@ -463,10 +467,6 @@ hr {
 
 .footer {
     z-index: 2;
-}
-
-.color-white {
-    color: white;
 }
 
 /* Media Queries for Responsiveness */
