@@ -135,6 +135,15 @@ li {
     padding: 16px;
 }
 
+.bold {
+    font-weight: bold;
+
+}
+
+.big {
+    font-size: 24px;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -220,6 +229,12 @@ li {
     margin-right: 16px;
     margin-bottom: 16px;
     align-self: center;
+}
+
+.google-maps-link {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .review-showcase {
