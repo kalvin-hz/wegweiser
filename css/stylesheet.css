@@ -123,6 +123,7 @@ li {
     list-style: disc;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
 }
 
 /* Utility Classes */
@@ -219,6 +220,34 @@ li {
     margin-right: 16px;
     margin-bottom: 16px;
     align-self: center;
+}
+
+.review-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: none;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+    margin: 32px;
+    width: 256px;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review img {
+    width: 64px;
 }
 
 .faq-section {
@@ -505,13 +534,13 @@ hr {
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 24px;
         margin: 0 0 16px 0;
         padding: 12px;
     }
 
     h3 {
-        font-size: 12px;
+        font-size: 20px;
         margin: 0 0 8px 0;
         padding: 8px;
     }
