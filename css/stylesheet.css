@@ -476,7 +476,7 @@ hr {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     /*mobile navigation*/
     .nav {
