@@ -278,7 +278,7 @@ li {
 .tel-container {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    /*margin-right: auto;*/
     gap: 4px;
 }
 
@@ -314,6 +314,12 @@ li {
 .logo {
     max-width: 512px;
     padding: 16px;
+}
+
+.nav-logo {
+    max-width: 256px;
+    padding: 16px;
+    margin-right: auto;
 }
 
 .width-100 {
