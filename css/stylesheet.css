@@ -202,8 +202,13 @@ li {
 }
 
 .angebot img {
-    width: 128px;
+    width: 60%;
     align-self: center;
+    padding-bottom: 32px;
+}
+
+.angebot h3 {
+    text-align: center;
 }
 
 .accent1 {
@@ -592,6 +597,10 @@ div.footer p {
     h4, h5, h6 {
         margin: 0 0 4px 0;
         padding: 4px;
+    }
+
+    .angebot img {
+        width: 90%;
     }
 
     .text {
