@@ -511,7 +511,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: end;
-    position: fixed;
+    position: absolute;
     top: auto;
     right: 0;
     width: auto;
