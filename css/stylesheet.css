@@ -554,6 +554,11 @@ footer {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.word-break {
+    word-break: auto-phrase;
 }
 
 .justify-self-end {
