@@ -84,6 +84,13 @@ a:hover {
     /*color: var(--gray-dark);*/
 }
 
+.p {
+    font-size: 18px;
+    color: var(--gray-dark);
+    margin: 0 0 10px 0;
+    padding: 4px;
+}
+
 /* Navigation Bar */
 nav {
     background: linear-gradient(45deg, rgba(128, 183, 187, 1) 0%, rgba(92, 167, 172, 1) 100%);
@@ -116,6 +123,9 @@ nav a:hover {
     color: white;
 }
 
+.color-black {
+    color: black;
+}
 
 /* Images */
 img {
