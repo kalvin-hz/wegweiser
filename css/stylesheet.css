@@ -157,8 +157,20 @@ li {
     justify-content: center;
 }
 
+.justify-content-end {
+    justify-content: end;
+}
+
 .align-self-center {
     align-items: center;
+}
+
+.gap {
+    gap: 16px;
+}
+
+.margin {
+    margin: 16px;
 }
 
 .card {
@@ -318,8 +330,8 @@ li {
 }
 
 .icon {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
 }
 
 .tel-num {
