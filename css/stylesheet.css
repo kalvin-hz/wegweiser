@@ -559,10 +559,9 @@ hr {
 }
 
 footer {
-    margin: 0;
+    margin: auto 0 0 0;
     padding: 16px;
     text-align: center;
-    height: 100px;
 }
 
 .footer {
