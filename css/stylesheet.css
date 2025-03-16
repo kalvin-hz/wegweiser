@@ -170,6 +170,19 @@ li {
     flex-wrap: wrap;
 }
 
+.gallery-home {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.gallery-home img {
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+}
+
 .border-left {
     border-left: 4px solid var(--gray-dark);
     margin-left: 92px;
