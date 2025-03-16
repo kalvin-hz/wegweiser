@@ -171,7 +171,7 @@ li {
 }
 
 .border-left {
-    border-left: 4px dashed var(--gray-dark);
+    border-left: 4px solid var(--gray-dark);
     margin-left: 92px;
 }
 
@@ -604,7 +604,7 @@ footer {
 }
 
 li {
-    list-style: none;
+    /*list-style;*/
 }
 
 div.footer {
