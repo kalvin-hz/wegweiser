@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 32px;
     margin: 0 0 16px 0;
     padding: 12px 0;
 }
@@ -170,6 +170,10 @@ li {
     flex-wrap: wrap;
 }
 
+.border-left {
+    border-left: 2px solid var(--gray-dark);
+}
+
 .justify-content-center {
     justify-content: center;
 }
@@ -180,6 +184,18 @@ li {
 
 .align-self-center {
     align-items: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.no-p {
+    padding: 0;
+}
+
+.no-m {
+    margin: 0;
 }
 
 .gap {
@@ -584,6 +600,10 @@ footer {
 
 .align-item-end {
     align-self: end;
+}
+
+li {
+    list-style: none;
 }
 
 div.footer {
