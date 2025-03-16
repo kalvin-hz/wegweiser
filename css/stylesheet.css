@@ -186,7 +186,7 @@ li {
 
 .border-left {
     border-left: 4px solid var(--gray-dark);
-    margin-left: 92px;
+    margin-left: 10%;
 }
 
 .justify-content-center {
@@ -211,6 +211,11 @@ li {
 
 .no-m {
     margin: 0;
+}
+
+.my-1 {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .gap {
@@ -618,7 +623,7 @@ footer {
 }
 
 li {
-    /*list-style;*/
+    /*list-style: none;*/
 }
 
 div.footer {
