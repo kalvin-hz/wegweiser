@@ -624,6 +624,7 @@ footer {
 
 li {
     /*list-style: none;*/
+    margin-left: 16px;
 }
 
 div.footer {
