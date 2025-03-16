@@ -171,7 +171,8 @@ li {
 }
 
 .border-left {
-    border-left: 2px solid var(--gray-dark);
+    border-left: 4px dashed var(--gray-dark);
+    margin-left: 92px;
 }
 
 .justify-content-center {
