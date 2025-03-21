@@ -720,3 +720,11 @@ div.footer p {
         width: 90%;
     }
 }
+
+/*potential iOs fix for mobile nav menu - needs testing*/
+@media (max-width:768px) {
+    .jumbotron,
+    .testimonials {
+        background-attachment: scroll;
+    }
+}
