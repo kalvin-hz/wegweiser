@@ -183,6 +183,9 @@ li {
     width: 400px;
     height: 400px;
     border-radius: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
+    object-fit: cover;
 }
 
 .border-left {
@@ -715,8 +718,9 @@ div.footer p {
     }
 
     .logo {
-        max-width: 264px;
         padding: 16px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .container-2-cards .card {
