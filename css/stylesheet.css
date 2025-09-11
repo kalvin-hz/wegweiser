@@ -309,6 +309,12 @@ li {
     margin: 32px;
 }
 
+.anfahrt-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
 .angebot img {
     width: 512px;
     height: 368px;
