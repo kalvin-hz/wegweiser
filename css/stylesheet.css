@@ -309,6 +309,10 @@ li {
     margin: 32px;
 }
 
+address {
+    font-style: normal;
+}
+
 .anfahrt-img {
     width: 600px;
     height: 400px;
