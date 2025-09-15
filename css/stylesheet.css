@@ -143,13 +143,62 @@ img {
     height: auto;
     display: block;
 }
+/* Lists */
+ul,
+ol {
+    margin: 0 0 16px 0;
+    padding-left: 1.25rem;
+    color: var(--gray-dark);
+}
+
+ul {
+    list-style: disc outside;
+}
+
+ol {
+    list-style: decimal outside;
+}
 
 li {
-    list-style: disc;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
     text-align: left;
+    margin: 0 0 8px 0;
 }
+
+li::marker {
+    color: var(--primary);
+}
+
+/* Nested list styles */
+ul ul {
+    list-style: circle;
+    margin-top: 8px;
+}
+
+ul ul ul {
+    list-style: square;
+}
+
+/* Utility list variants */
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-inline > li {
+    display: inline-block;
+    margin-right: 12px;
+}
+/* End Lists */
 
 /* Utility Classes */
 .center {
@@ -694,6 +743,7 @@ footer {
     align-self: end;
 }
 
+/* removed duplicate li margin rule; spacing handled by ul/ol padding-left and li margins */
 li {
     /*list-style: none;*/
     margin-left: 16px;
