@@ -765,6 +765,12 @@ div.footer p {
     max-width: 200px;
 }
 
+.social-footer {
+    margin: auto 0 auto auto;
+    display: flex;
+    gap: 1rem;
+    align-self: end;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 1500px) {
 
@@ -852,5 +858,17 @@ div.footer p {
     .jumbotron,
     .testimonials {
         background-attachment: scroll;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-footer {
+        margin: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-self: center;
     }
 }
